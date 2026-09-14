@@ -1,6 +1,7 @@
 [tools]
 "github:cli/cli" = "latest"
 "github:dandavison/delta" = "latest"
+"github:jj-vcs/jj" = "latest"
 "github:sharkdp/bat" = "latest"
 "github:sharkdp/fd" = "latest"
 "github:twpayne/chezmoi" = "latest"
