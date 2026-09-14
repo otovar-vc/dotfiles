@@ -1,4 +1,5 @@
 [tools]
+fzf = "latest"
 "github:cli/cli" = "latest"
 "github:dandavison/delta" = "latest"
 "github:jj-vcs/jj" = "latest"
