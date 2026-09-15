@@ -1,5 +1,11 @@
 # Common ignored files that may not always be present in a project.
 
+# Local tooling
+mise.local.toml
+
+# Local agent configurations
+.claude/settings.local.json
+
 # Code Knowledge Graph (CKG) artifacts
 .codegraph/
 
