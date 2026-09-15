@@ -1,1 +1,7 @@
+# Common ignored files that may not always be present in a project.
+
+# Code Knowledge Graph (CKG) artifacts
 .codegraph/
+
+# Local tmp/ folder that keeps writes/reads within a workspace.
+tmp/
