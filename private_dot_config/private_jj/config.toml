@@ -13,3 +13,6 @@ key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEbM6cVI+3Hnvjlb5QvVissJeqY2QCZGLhs9A
 [ui]
 pager = "delta"
 diff-formatter = ":git"
+
+[templates]
+git_push_bookmark = "change_id.short(8)"
