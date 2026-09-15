@@ -121,7 +121,8 @@
       "Bash(gh config get:*)",
       "Bash(gh alias list:*)",
       "Bash(gh extension list:*)",
-      "Bash(jq:*)"
+      "Bash(jq:*)",
+      "mcp__codegraph__*"
     ]
   },
   "hooks": {
@@ -132,6 +133,16 @@
           {
             "type": "command",
             "command": "rtk hook claude"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "codegraph prompt-hook"
           }
         ]
       }
