@@ -1,8 +1,11 @@
 [tools]
+claude-code = "latest"
 fzf = "latest"
 "github:cli/cli" = "latest"
 "github:dandavison/delta" = "latest"
 "github:jj-vcs/jj" = "latest"
+"github:morantron/tmux-fingers" = "latest"
+"github:rtk-ai/rtk" = "latest"
 "github:sharkdp/bat" = "latest"
 "github:sharkdp/fd" = "latest"
 "github:twpayne/chezmoi" = "latest"
