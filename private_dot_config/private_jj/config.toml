@@ -9,3 +9,7 @@ behavior = "own"
 backend = "ssh"
 backends.ssh.program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEbM6cVI+3Hnvjlb5QvVissJeqY2QCZGLhs9AXe3E9hp"
+
+[ui]
+pager = "delta"
+diff-formatter = ":git"
