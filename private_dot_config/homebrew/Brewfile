@@ -7,3 +7,5 @@ cask "ghostty"
 go "cmd/go"
 go "cmd/gofmt"
 npm "corepack"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
