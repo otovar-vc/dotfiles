@@ -9,3 +9,5 @@ go "cmd/gofmt"
 npm "corepack"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
