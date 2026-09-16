@@ -87,6 +87,15 @@ source $ZSH/oh-my-zsh.sh
 # Preferred editor and pager
 export EDITOR="nvim"
 
+# Set XDG locations for consistency
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_DATA_DIRS="/usr/local/share:/usr/share"
+export XDG_CONFIG_DIRS="/etc/xdg"
+export XDG_RUNTIME_DIR="/run/user/$(id -u)"
+
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
