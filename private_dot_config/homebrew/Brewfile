@@ -11,3 +11,5 @@ npm "corepack"
 brew "docker"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
+# Bash scripts that integrate bat with various command-line tools
+brew "bat-extras"
