@@ -110,6 +110,7 @@ export XDG_RUNTIME_DIR="/run/user/$(id -u)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias bathelp="bat -plhelp"
 alias cat="bat"
 alias find="fd"
 alias grep="rg"
