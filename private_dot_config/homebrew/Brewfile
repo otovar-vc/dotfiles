@@ -13,3 +13,5 @@ brew "docker"
 brew "colima"
 # Bash scripts that integrate bat with various command-line tools
 brew "bat-extras"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
