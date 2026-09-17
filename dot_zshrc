@@ -98,6 +98,9 @@ export XDG_RUNTIME_DIR="/run/user/$(id -u)"
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
+export LIBRARY_PATH="$LIBRARY_PATH:/opt/homebrew/lib"
+export CPATH="$CPATH:/opt/homebrew/include"
+export CGO_CFLAGS_ALLOW='-Xpreprocessor'
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
