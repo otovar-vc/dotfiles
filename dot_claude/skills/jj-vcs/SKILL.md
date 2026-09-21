@@ -3,6 +3,7 @@ name: jujutsu
 description: Use this skill for any version control operations (commit, log, diff, push, fetch, bookmark, workspace, rebase, undo, etc.). If a `.jj` directory exists, the repo is jujutsu and git mutations will corrupt it — use `jj` for all mutations; read-only `git log/diff/show/blame/grep` are allowed. Covers co-located repos, multi-agent parallel workspaces, and operation-log recovery. **DO NOT IGNORE**
 allowed-tools: Bash(jj *)
 license: Apache-2.0
+model: sonnet
 metadata:
   author: johnstegeman
   version: "1.3"
