@@ -1,6 +1,7 @@
 [tools]
 claude-code = "latest"
 fzf = "latest"
+"github:blazingjj/blazingjj" = "latest"
 "github:cli/cli" = "latest"
 "github:dandavison/delta" = "latest"
 "github:jj-vcs/jj" = "latest"
