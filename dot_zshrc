@@ -114,6 +114,7 @@ export CGO_CFLAGS_ALLOW='-Xpreprocessor'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias bathelp="bat -plhelp"
+alias bjj="blazingjj"
 alias cat="bat"
 alias find="fd"
 alias grep="rg"
