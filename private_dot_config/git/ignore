@@ -1,5 +1,10 @@
 # Common ignored files that may not always be present in a project.
 
+# Worktrees and workspaces
+.claude/worktrees/
+.worktrees/
+.workspaces/
+
 # Local tooling
 mise.local.toml
 
