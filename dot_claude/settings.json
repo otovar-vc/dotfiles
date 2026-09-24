@@ -1,7 +1,4 @@
 {
-  "theme": "auto",
-  "editorMode": "vim",
-  "model": "sonnet",
   "permissions": {
     "allow": [
       "Bash(git status:*)",
@@ -123,7 +120,8 @@
       "Bash(gh extension list:*)",
       "Bash(jq:*)",
       "mcp__codegraph__*"
-    ]
+    ],
+    "defaultMode": "plan"
   },
   "hooks": {
     "PreToolUse": [
@@ -147,5 +145,13 @@
         ]
       }
     ]
-  }
+  },
+  "worktree": {
+    "baseRef": "fresh"
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true
+  },
+  "theme": "auto",
+  "editorMode": "vim"
 }
