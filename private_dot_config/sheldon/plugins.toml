@@ -16,6 +16,9 @@ shell = "zsh"
 [plugins.zsh-syntax-highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
 
+[plugins.vi-mode]
+github = "jeffreytse/zsh-vi-mode"
+
 # For example:
 #
 # [plugins.base16]
