@@ -73,7 +73,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(fzf gh git zoxide)
+plugins=(aws fzf gh git zoxide)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -141,3 +141,4 @@ create_pr_slack_message() {
 # Completions
 eval "$(chezmoi completion zsh)"
 eval "$(jj util completion zsh)"
+eval "$(sheldon source)"
