@@ -10,10 +10,11 @@
 #
 # See the documentation for more https://github.com/rossmacarthur/sheldon#readme
 
-[plugins]
+shell = "zsh"
 
+[plugins]
 [plugins.zsh-syntax-highlighting]
-github = "zsh-user/zsh-syntax-highlighting"
+github = "zsh-users/zsh-syntax-highlighting"
 
 # For example:
 #
