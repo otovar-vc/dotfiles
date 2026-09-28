@@ -17,3 +17,5 @@ brew "bat-extras"
 cask "obsidian"
 # Fast, configurable, shell plugin manager
 brew "sheldon"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
