@@ -4,12 +4,13 @@
 
 ---@type LazySpec
 return {
-  "AstroNvim/astrocommunity",
-  { import = "astrocommunity.git.gitlinker-nvim" },
-  { import = "astrocommunity.motion.flash-nvim" },
-  { import = "astrocommunity.pack.go" },
-  { import = "astrocommunity.pack.jj" },
-  { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.toml" },
-  -- import/override with your plugins folder
+	"AstroNvim/astrocommunity",
+	{ import = "astrocommunity.git.gitlinker-nvim" },
+	{ import = "astrocommunity.motion.flash-nvim" },
+	{ import = "astrocommunity.pack.go" },
+	{ import = "astrocommunity.pack.jj" },
+	{ import = "astrocommunity.pack.lua" },
+	{ import = "astrocommunity.pack.toml" },
+	{ import = "astrocommunity.test.neotest" },
+	-- import/override with your plugins folder
 }
