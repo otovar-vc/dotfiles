@@ -12,7 +12,7 @@ output:
       print-issued-lines: true
       colors: true
     json:
-      path: "codequality-report.json"
+      path: "./codequality-report.json"
   sort-order:
     - linter
     - file
