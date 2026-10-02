@@ -1,0 +1,25 @@
+# $schema: https://golangci-lint.run/jsonschema/golangci.jsonschema.json
+
+version: "2"
+
+output:
+  path-mode: ""
+  path-prefix: ""
+  show-stats: true
+  formats:
+    text:
+      print-linter-name: true
+      print-issued-lines: true
+      colors: true
+    json:
+      path: "codequality-report.json"
+  sort-order:
+    - linter
+    - file
+    - severity
+
+linters:
+  default: none
+  enable:
+    - modernize
+    - mirror
