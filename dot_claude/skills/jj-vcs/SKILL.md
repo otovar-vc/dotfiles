@@ -230,6 +230,7 @@ For running multiple agents in parallel against the same repo without working-co
 # Quick reference (full convention in references/WORKSPACES.md)
 jj workspace add .workspaces/<repo>-<purpose>   # Create
 jj workspace list                                # List
+jj workspace remove <name>                       # Untrack and delete files from disk
 jj workspace forget <name>                       # Untrack (files stay on disk)
 ```
 
@@ -318,7 +319,8 @@ If you need to run `jj op log` or `jj evolog`, use the matching compact commands
 | Push bookmark | `jj git push -b <name>` |
 | Add workspace | `jj workspace add .workspaces/<repo>-<purpose>` |
 | List workspaces | `jj workspace list` |
-| Forget workspace | `jj workspace forget <name>` |
+| Remove workspace | `jj workspace remove <name>` |
+| Forget workspace (keep files) | `jj workspace forget <name>` |
 | See operation log | `jj op log` |
 | Jump to past state | `jj op restore <op-id>` |
 | See change evolution | `jj evolog -r <id>` |

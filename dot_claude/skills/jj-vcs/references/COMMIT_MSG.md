@@ -23,3 +23,16 @@ Body is optional
    * Take out the trash
 7. Wrap the body at 72 characters
 8. Use the body to explain what and why vs. how
+9. Reference issues with git trailers at the end of the message, never in the subject or type (no `fix(#123):` or `fix(product#123):`)
+   * One trailer per issue, separated from the body by a blank line
+   * Use the full issue URL as the value
+   * `Refs:` links an issue the commit touches; the issue stays open
+   * `Fixes:` marks the commit as resolving the issue; GitHub closes the issue when the commit lands on the default branch, so use it only when merging this commit completes the issue
+
+```
+fix: Schedule swift-updater in fetchsvc reconciler
+
+Re-enable the feed disabled during the Cloudflare outage.
+
+Refs: https://github.com/vulncheck/product/issues/572
+```

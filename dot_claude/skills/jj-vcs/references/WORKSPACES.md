@@ -125,8 +125,7 @@ Use this when one developer is orchestrating multiple agents and the result shou
 
 ```bash
 jj rebase -s <workspace-change-id> -d @
-jj workspace forget <workspace-name>
-rm -rf "$WORKSPACE_PATH"
+jj workspace remove <workspace-name>
 ```
 
 If the repo uses bookmarks for shipping work, move or create the bookmark after the rebase using the normal push workflow from `references/PUSH.md`.
@@ -146,7 +145,10 @@ Use this when the work needs human review before landing:
 ```bash
 jj bookmark create my-feature -r <workspace-change-id>
 jj git push -b my-feature
+jj workspace remove <workspace-name>
 ```
+
+The pushed bookmark keeps the change, so the workspace can be removed once the push succeeds.
 
 Decision guide:
 
@@ -163,13 +165,15 @@ If the context is ambiguous, suggest Strategy 1 first and ask whether the user w
 
 ```bash
 jj workspace list
-jj workspace forget <workspace-name>
-rm -rf "$WORKSPACE_PATH"
+jj workspace remove <workspace-name>   # Untrack and delete files from disk
+jj workspace forget <workspace-name>   # Untrack only; files stay on disk
 ```
 
 If you need to inspect `jj workspace list` output as an agent, use the compact command from `references/TEMPLATES.md`.
 
-`jj workspace forget` only unregisters the workspace. It does not delete files from disk.
+Prefer `jj workspace remove` for cleanup. It snapshots the working copy into a commit, unregisters the workspace, and deletes its directory (including the Git worktree in co-located repos). There is no `jj workspace delete`. Verified on jj 0.46.0; older releases may lack `remove`, so fall back to `forget` plus deleting the directory if `jj workspace --help` does not list it.
+
+Use `jj workspace forget` only to keep the files on disk. It unregisters the workspace and leaves the directory in place.
 
 ## `update-stale`
 
@@ -198,7 +202,7 @@ Do not improvise a manual repair before trying `update-stale`. If the old operat
 3. Use descriptive names: `${REPO_NAME}-<purpose>`, not `tmp`.
 4. Bootstrap the workspace before handing it to another agent.
 5. Report the absolute path, change ID, and next commands when a workspace is ready.
-6. Run `jj workspace forget` before deleting the directory.
+6. Clean up with `jj workspace remove <workspace-name>`; never `rm -rf` a workspace directory by hand.
 7. Ask before choosing between rebase, merge, or PR integration.
 8. Use `jj workspace update-stale` as the first response to a stale workspace.
 
