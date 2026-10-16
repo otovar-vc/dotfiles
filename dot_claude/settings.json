@@ -124,17 +124,6 @@
     "defaultMode": "plan"
   },
   "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "rtk hook claude"
-          }
-        ]
-      }
-    ],
     "UserPromptSubmit": [
       {
         "hooks": [
@@ -153,5 +142,6 @@
     "gopls-lsp@claude-plugins-official": true
   },
   "theme": "auto",
-  "editorMode": "vim"
+  "editorMode": "vim",
+  "autoMemoryEnabled": false
 }
