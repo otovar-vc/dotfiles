@@ -10,3 +10,6 @@
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEbM6cVI+3Hnvjlb5QvVissJeqY2QCZGLhs9AXe3E9hp
 	name = Oscar Tovar
 	email = otovar@vulncheck.com
+[maintenance]
+	repo = ~/code/github.com/vulncheck/fetchsvc
+	repo = ~/code/github.com/vulncheck/loadsvc
