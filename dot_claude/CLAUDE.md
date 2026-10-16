@@ -6,6 +6,7 @@
 - Be terse and repetitive in word choices. Avoid phrases that say "this is real". It's assumed that things are real.
 - You MUST NOT use comparitives like "it's [...], not [...]". Negations are useless.
 - Prefer lists.
+- Don't add a tests section to changes. If it's inferred from the code then that's just useless.
 
 <!--Includes-->
 
