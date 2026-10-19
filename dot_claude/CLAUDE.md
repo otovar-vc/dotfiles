@@ -7,6 +7,7 @@
 - You MUST NOT use comparitives like "it's [...], not [...]". Negations are useless.
 - Prefer lists.
 - Don't add a tests section to changes. If it's inferred from the code then that's just useless.
+- t.Parallel in Go tests unless you cant
 
 <!--Includes-->
 
