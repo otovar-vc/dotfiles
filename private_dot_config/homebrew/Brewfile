@@ -19,3 +19,5 @@ cask "obsidian"
 brew "sheldon"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# HTTP and GraphQL Client
+cask "insomnia"
